@@ -1,0 +1,53 @@
+frisucode_ms/
+│
+├── database/                        ← SQL DUMPS & DB SCHEMAS
+│
+├── public/                          ← PUBLIC NGO WEBSITE
+│   ├── index.php, about.php, etc.
+│   ├── donate.php, donate_process.php
+│   ├── impact.php, contact.php, programs.php, news_view.php
+│   │
+│   ├── lang/                        ← PUBLIC LANG FILES
+│   │   ├── en.php, sw.php, fr.php, de.php, es.php
+│   │
+│   ├── partials/                    ← SITE HEADER/FOOTER
+│   │   ├── header.php, footer.php
+│   │
+│   └── assets/                      ← CSS, JS, IMAGES
+│
+├── system/                          ← INTERNAL SYSTEM (FRISUCODE-MS)
+│   ├── auth/                        ← AUTHENTICATION LOGIC
+│   │   ├── login.php, login_process.php, logout.php
+│   │   ├── auth_check.php, hash.php, forgot_password.php
+│   │
+│   ├── dashboards/                  ← ROLE-BASED DASHBOARDS
+│   │   ├── super_admin.php
+│   │   ├── project_manager.php
+│   │   ├── finance.php
+│   │   ├── staff.php
+│   │   └── donor.php
+│   │
+│   ├── partials/                    ← REUSABLE SYSTEM COMPONENTS
+│   │   ├── header.php, footer.php
+│   │   ├── admin_sidebar.php
+│   │   ├── pm_sidebar.php
+│   │   ├── finance_sidebar.php
+│   │   ├── staff_sidebar.php
+│   │   └── donor_sidebar.php
+│   │
+│   ├── lang/                        ← SYSTEM LANG FILES (DASHBOARD/AUTH)
+│   │   ├── en.php, sw.php, fr.php, de.php
+│   │
+│   ├── config/                      ← DATABASE SETTINGS
+│   │   └── db.php
+│   │
+│   └── [Modules]                    ← CORE APP MODULES
+│       ├── beneficiaries/, projects/, donors/, donations/
+│       ├── finance/, reports/, users/, settings/
+│
+└── uploads/                         ← MEDIA UPLOADS
+
+
+Default Admin Login:
+Email: admin@frisucode.org
+Password: Admin@123
