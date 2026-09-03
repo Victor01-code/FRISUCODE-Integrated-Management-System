@@ -1,5 +1,3 @@
-dockerfile
-
-From php:8.2-apache
+FROM php:8.2-apache
 COPY . /var/www/html/
 EXPOSE 80
